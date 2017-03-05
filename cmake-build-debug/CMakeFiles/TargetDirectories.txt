@@ -1,0 +1,3 @@
+/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/CMakeFiles/extra_ci.dir

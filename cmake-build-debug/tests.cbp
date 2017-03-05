@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exec">
+				<Option output="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/exec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 exec"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exec/fast">
+				<Option output="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/exec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 exec/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="extra_ci">
+				<Option output="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/libextra_ci.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 extra_ci"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="extra_ci/fast">
+				<Option output="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/libextra_ci.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 extra_ci/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Yaroslav/CLionProjects/extra_ci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/list.c">
+			<Option target="tests"/>
+			<Option target="exec"/>
+			<Option target="extra_ci"/>
+		</Unit>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/list.h">
+			<Option target="tests"/>
+			<Option target="exec"/>
+			<Option target="extra_ci"/>
+		</Unit>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/main.c">
+			<Option target="tests"/>
+			<Option target="exec"/>
+			<Option target="extra_ci"/>
+		</Unit>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/tests/main.c">
+			<Option target="tests"/>
+			<Option target="exec"/>
+			<Option target="extra_ci"/>
+		</Unit>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/university.c">
+			<Option target="tests"/>
+			<Option target="exec"/>
+			<Option target="extra_ci"/>
+		</Unit>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/university.h">
+			<Option target="tests"/>
+			<Option target="exec"/>
+			<Option target="extra_ci"/>
+		</Unit>
+		<Unit filename="/Users/Yaroslav/CLionProjects/extra_ci/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

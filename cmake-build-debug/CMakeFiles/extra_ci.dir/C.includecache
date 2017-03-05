@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Yaroslav/CLionProjects/extra_ci/list.c
+list.h
+/Users/Yaroslav/CLionProjects/extra_ci/list.h
+assert.h
+-
+
+/Users/Yaroslav/CLionProjects/extra_ci/list.h
+stdlib.h
+-
+
+/Users/Yaroslav/CLionProjects/extra_ci/university.c
+university.h
+/Users/Yaroslav/CLionProjects/extra_ci/university.h
+
+/Users/Yaroslav/CLionProjects/extra_ci/university.h
+list.h
+/Users/Yaroslav/CLionProjects/extra_ci/list.h
+string.h
+-
+
