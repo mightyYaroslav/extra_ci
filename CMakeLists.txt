@@ -1,18 +1,47 @@
-cmake_minimum_required(VERSION 3.6)
-project(extra_ci)
+cmake_minimum_required(VERSION 2.8.7)
 
-set(CMAKE_C_STANDARD 99)
+#
+# Common settings
+#
 
-set(SOURCE_FILES list.c list.h university.c university.h)
+# adds ./include to compiler include directories
+include_directories(include)
+# compiles code files from ./src folder
+file(GLOB LIB_SOURCES "src/*.c")
 
-include_directories(/usr/local/include)
-link_libraries(/usr/local/lib/libcheck.a)
-add_library(${PROJECT_NAME} ${SOURCE_FILES})
-target_link_libraries(${PROJECT_NAME} /usr/local/lib/libcheck.a)
+#
+# first project (static lib)
+#
+project (mymodule)
+# to build static library target with name libmtmodule.a
+add_library(${CMAKE_PROJECT_NAME} STATIC ${LIB_SOURCES})
 
+# to install library headers
+install(
+    DIRECTORY include/ DESTINATION /usr/local/include
+    FILES_MATCHING PATTERN "*.h"
+)
+# Set the location for library installation
+# Use "sudo make install" in build directory to apply
+install(TARGETS ${CMAKE_PROJECT_NAME} DESTINATION /usr/local/lib)
 
-#project(exec)
-#set(CMAKE_C_STANDARD 99)
-#add_executable(${PROJECT_NAME} "main.c" ${SOURCE_FILES})
-#target_link_libraries(${PROJECT_NAME} /usr/local/lib/libcheck.a)
+#
+# Test project
+#
+project(a.out)
+add_executable(${CMAKE_PROJECT_NAME} "tests/main.c" ${LIB_SOURCES})
+set_property(TARGET ${CMAKE_PROJECT_NAME} PROPERTY C_STANDARD 99)
+target_link_libraries(${CMAKE_PROJECT_NAME} libcheck.so)
 
+#
+# Create make test
+#
+enable_testing()
+add_test(unit-tests ${CMAKE_PROJECT_NAME})
+
+## Coverage
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/scripts/cmake)
+include(CodeCoverage)
+setup_target_for_coverage(${CMAKE_PROJECT_NAME}_coverage ${CMAKE_PROJECT_NAME} coverage)
+SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+SET(CMAKE_C_FLAGS "-std=c99 -g -O0 -fprofile-arcs -ftest-coverage")
